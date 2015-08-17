@@ -1,0 +1,19 @@
+{
+  "name": "thunderjs",
+  "main": "dist/thunder.min.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/charlespeters/thunder.js",
+  "authors": [
+    "charles peters <charlespeters42@gmail.com>"
+  ],
+  "description": "Use WebP and gracefully degrade to using JPEG, GIF, or PNG",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "Gulpfile.js",
+  ]
+}
