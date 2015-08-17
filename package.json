@@ -1,0 +1,25 @@
+{
+  "name": "thunderjs",
+  "version": "1.0.0",
+  "description": "Use WebP and gracefully degrade to using JPEG, GIF, or PNG",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlespeters/thunder.js.git"
+  },
+  "author": "charles peters",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/charlespeters/thunder.js/issues"
+  },
+  "homepage": "https://github.com/charlespeters/thunder.js#readme",
+  "devDependencies": {
+    "webpack": "^1.11.0"
+  }
+}
