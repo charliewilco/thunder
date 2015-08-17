@@ -1,14 +1,10 @@
-(function(){
-  document.querySelectorAll('data-thunder');
-};
+var test = require('./src/detection');
+var Thunder = require('./src/thunder-images');
 
+var webpSrc = 'data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=';
 
-
-
-function Thunder(){
-  var images = document.querySelectorAll('[data-thunder]');
-  var thunderImages = images[0].getAttribute('data-thunder');
-  console.log(thunderImages);
-}
-
-Thunder();
+test(webpSrc, function(e) {
+  if (e && e.type !== 'load') {
+    Thunder();
+  }
+});

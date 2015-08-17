@@ -1,15 +1,20 @@
-module.exports = function(){
-  function testWebP(callback) {
-    var webP = new Image();
-    webP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
-    webP.onload = webP.onerror = function () {
-        callback(webP.height === 2);
-    };
+module.exports = function test (uri, cb){
+
+  var image = new Image();
+
+  function addResult(event) {
+  // if the event is from 'onload', check the see if the image's width is
+  // 1 pixel (which indiciates support). otherwise, it fails
+
+      var result = event && event.type === 'load' ? image.width == 1 : false;
+
+      if (cb) {
+          cb(event);
+      }
   }
 
-  function notify(supported) {
-    console.log((supported) ? "webP supported!" : "webP not supported.");
-  }
+  image.onerror = addResult;
+  image.onload = addResult;
+  image.src = uri;
 
-  testWebP(notify);
-}
+};
