@@ -4,9 +4,8 @@
   "version": "1.0.0",
   "homepage": "https://github.com/charlespeters/thunder.js",
   "authors": [
-    "charlespeters <charlespeters42@gmail.com>"
+    "charles peters <charlespeters42@gmail.com>"
   ],
-  "description": "Use WebP and gracefully degrade to using JPEG GIF or PNG",
   "license": "MIT",
   "ignore": [
     "**/.*",
