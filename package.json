@@ -1,6 +1,6 @@
 {
   "name": "thunderjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Use WebP and gracefully degrade to using JPEG, GIF, or PNG",
   "main": "index.js",
   "directories": {
