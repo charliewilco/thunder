@@ -4,7 +4,7 @@ Use WebP and gracefully degrade to using JPEG, GIF, or PNG
 
 
 ## Usage
-I really like WebP. You should too. But it's not supported in all the evergreen browsers. This package detects whether the browser it's running in was WebP support and if doesn't it falls back to your specified image.
+I really like WebP. You should too. But it's not supported in all the evergreen browsers. This package detects whether the browser it's running in, has WebP support and if it doesn't, it falls back to your specified image.
 
 ```
  <img data-thunder="path/to/img.png" src="path/to/img.webp">
@@ -57,12 +57,12 @@ At this moment, I know of no tool that will allow you to export webP images from
 
 ## Contributing
 
-First off, you're awesome for wanting to contribute. Second, please a take a second to go over a few things to make this process simpler for everyone. Third, you're awesome.
+First off, you're awesome for wanting to contribute. Second, please take a second to go over a few things to make this process simpler for everyone. Third, you're awesome.
 
 ### Pull Requests
 - [Fork](https://github.com/charlespeters/thunder#fork-destination-box) this repo.
 - Push to your fork and submit a pull request.
-- Please provide a short explanation of why you made the changes you made and
+- Please provide a short explanation of why you made the changes you made.
 
 ### Issues
 **Reduced test cases are required**. All bug reports and problem issues require a reduced test case. See [CSS Tricks - Reduced Test Cases](http://css-tricks.com/reduced-test-cases/) on why they _"are the absolute, ... number one way to troubleshoot bugs."_ Reduced test cases help you identify the issue at hand and understand your own code. On our side, they greatly reduce the amount of time spent resolving the issue.
@@ -72,7 +72,7 @@ First off, you're awesome for wanting to contribute. Second, please a take a sec
 - A link to your site is **not** a reduced test case.
 - A [JSBin](http://jsbin.com/) or [CodePen](http://codepen.io) is preferred so we can help you fix an error.
 
-## Licence
+## License
 
 MIT
 
