@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Thunder by charlespeters</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Thunder</h1>
+      <h2 class="project-tagline">Use WebP and gracefully degrade to using JPEG, GIF, or PNG</h2>
+      <a href="https://github.com/charlespeters/thunder" class="btn">View on GitHub</a>
+      <a href="https://github.com/charlespeters/thunder/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/charlespeters/thunder/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="thunderjs" class="anchor" href="#thunderjs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thunder.js</h1>
+
+<p>Use WebP and gracefully degrade to using JPEG, GIF, or PNG</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>I really like WebP. You should too. But it's not supported in all the evergreen browsers. This package detects whether the browser it's running in, has WebP support and if it doesn't, it falls back to your specified image.</p>
+
+<pre><code> &lt;img data-thunder="path/to/img.png" src="path/to/img.webp"&gt;
+</code></pre>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<h3>
+<a id="npm" class="anchor" href="#npm" aria-hidden="true"><span class="octicon octicon-link"></span></a>NPM</h3>
+
+<pre><code>npm install thunderjs
+</code></pre>
+
+<p>Your main bundled .js file would be something like:</p>
+
+<div class="highlight highlight-js"><pre>Thunder <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>thunderjs<span class="pl-pds">'</span></span>);
+
+<span class="pl-c1">Thunder</span>();</pre></div>
+
+<h3>
+<a id="bower" class="anchor" href="#bower" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bower</h3>
+
+<pre><code>bower install thunderjs
+</code></pre>
+
+<p>Link to <code>bower_components/thunderjs/dist/thunder.min.js</code> or include it in your build and then call <code>Thunder();</code>.</p>
+
+<h2>
+<a id="advantages-of-webp" class="anchor" href="#advantages-of-webp" aria-hidden="true"><span class="octicon octicon-link"></span></a>Advantages of WebP</h2>
+
+<ul>
+<li><a href="https://developers.google.com/speed/webp/docs/webp_study">25% to 34% smaller files</a></li>
+<li>Transparency</li>
+<li>Lossless Quality</li>
+</ul>
+
+<p>Here's one really awesome <a href="http://product.voxmedia.com/2015/8/13/9143805/performance-update-2-electric-boogaloo">use case</a> that boosted performance.</p>
+
+<h2>
+<a id="generating-webp-images" class="anchor" href="#generating-webp-images" aria-hidden="true"><span class="octicon octicon-link"></span></a>Generating WebP Images</h2>
+
+<p><a href="https://developers.google.com/speed/webp/docs/using">WebP's Getting Started Guide</a> has lots of details about getting started with WebP and CLI tools, be sure to check that out.</p>
+
+<h3>
+<a id="sketch" class="anchor" href="#sketch" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sketch</h3>
+
+<p>At this moment, I know of no tool that will allow you to export webP images from Bohemian Coding's Sketch app. But if you know of one please submit a pull request.</p>
+
+<h3>
+<a id="online-converters" class="anchor" href="#online-converters" aria-hidden="true"><span class="octicon octicon-link"></span></a>Online Converters</h3>
+
+<ul>
+<li><a href="http://image.online-convert.com/convert-to-webp">Online Convert</a></li>
+<li><a href="http://webp-converter.com/">WebP Converter</a></li>
+<li><a href="https://convertio.co/convert-to-webp/">Convertio</a></li>
+</ul>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>First off, you're awesome for wanting to contribute. Second, please take a second to go over a few things to make this process simpler for everyone. Third, you're awesome.</p>
+
+<h3>
+<a id="pull-requests" class="anchor" href="#pull-requests" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pull Requests</h3>
+
+<ul>
+<li>
+<a href="https://github.com/charlespeters/thunder#fork-destination-box">Fork</a> this repo.</li>
+<li>Push to your fork and submit a pull request.</li>
+<li>Please provide a short explanation of why you made the changes you made.</li>
+</ul>
+
+<h3>
+<a id="issues" class="anchor" href="#issues" aria-hidden="true"><span class="octicon octicon-link"></span></a>Issues</h3>
+
+<p><strong>Reduced test cases are required</strong>. All bug reports and problem issues require a reduced test case. See <a href="http://css-tricks.com/reduced-test-cases/">CSS Tricks - Reduced Test Cases</a> on why they <em>"are the absolute, ... number one way to troubleshoot bugs."</em> Reduced test cases help you identify the issue at hand and understand your own code. On our side, they greatly reduce the amount of time spent resolving the issue.</p>
+
+<ul>
+<li>A reduced test case is an isolated example that demonstrates the bug or issue.</li>
+<li>It contains the bare minimum HTML, CSS, and JavaScript required to demonstrate the bug. No extra functionality or styling.</li>
+<li>A link to your site is <strong>not</strong> a reduced test case.</li>
+<li>A <a href="http://jsbin.com/">JSBin</a> or <a href="http://codepen.io">CodePen</a> is preferred so we can help you fix an error.</li>
+</ul>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>MIT</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/charlespeters/thunder">Thunder</a> is maintained by <a href="https://github.com/charlespeters">charlespeters</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
