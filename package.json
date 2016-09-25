@@ -33,6 +33,6 @@
     "babel-preset-es2015": "^6.14.0",
     "source-map-loader": "^0.1.5",
     "standard-loader": "^5.0.0",
-    "webpack": "^1.11.0"
+    "webpack": "^1.13.2"
   }
 }
