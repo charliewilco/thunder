@@ -6,7 +6,7 @@ Use WebP and gracefully degrade to using JPEG, GIF, or PNG
 ## Usage
 I really like WebP. You should too. But it's not supported in all the evergreen browsers. This package detects whether the browser it's running in, has WebP support and if it doesn't, it falls back to your specified image.
 
-```
+```markdown
  <img data-thunder="path/to/img.png" src="path/to/img.webp">
 ```
 
